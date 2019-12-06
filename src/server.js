@@ -1,6 +1,6 @@
 const app = require("./app")
-const porta = 3000
+const port = 3000
 
-app.listen(porta, function(){
-    console.log(`app esta rodando na porta ${porta}`)
+app.listen(port, function(){
+    console.log(`app esta rodando na porta ${port}`)
 })

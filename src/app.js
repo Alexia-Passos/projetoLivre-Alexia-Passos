@@ -13,7 +13,7 @@ db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
   console.log("conexão feita com sucesso.")
 })
-
+const index = require("./routes/index")
 const usuarios = require("./routes/usuariosRoute")
 
 app.use(function(req, res, next) {
@@ -26,6 +26,7 @@ app.use(function(req, res, next) {
 })
 
 app.use(bodyParser.json());
+app.use("/", index)
 app.use("/usuarios", usuarios)
 
 module.exports = app
