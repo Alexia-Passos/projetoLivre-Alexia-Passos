@@ -1,0 +1,25 @@
+{
+  "name": "projetolivre-alexia-passos",
+  "version": "1.0.0",
+  "description": "Projeto Livre Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexia-Passos/projetoLivre-Alexia-Passos.git"
+  },
+  "author": "Alexxia Passos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexia-Passos/projetoLivre-Alexia-Passos/issues"
+  },
+  "homepage": "https://github.com/Alexia-Passos/projetoLivre-Alexia-Passos#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.14",
+    "nodemon": "^2.0.1"
+  }
+}
