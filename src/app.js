@@ -13,8 +13,8 @@ db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
   console.log("conexão feita com sucesso.")
 })
-const index = require("./routes/index")
-const usuarios = require("./routes/usuariosRoute")
+const index = require("./model/index")
+const usuarios = require("./routes/usuariosRoutes")
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")

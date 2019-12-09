@@ -1,16 +1,5 @@
 const Usuarios = require()
 
-/**
- * @api {get} /user/:id Request User information
- * @apiName GetUser
- * @apiGroup User
- *
- * @apiParam {Number} id Users unique ID.
- *
- * @apiSuccess {String} firstname Firstname of the .
- * @apiSuccess {String} lastname  Lastname of the User.
- */
-
 exports.postUsuario = (req, res) => {
   Usuarios.save(function (err, usuario) {
     if (err) res.status(500).send(err);

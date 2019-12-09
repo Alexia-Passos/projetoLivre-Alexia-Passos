@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
 
-const AlunasSchema = new mongoose.Schema({
-    id:{Number},
-    nis:{Number},
-    nomeCompleto: {String},
-    idade: {Number},
-    bairro: {String},
-    quantDeDependentes: {Number},
-    rendaPerCapita:{Number},
-    PessoaComDef:{Boolean},
-    idoso: {Boolean}
+const UsuariosSchema = new mongoose.Schema({
+    id:{type: Number},
+    nis:{type: Number},
+    nomeCompleto: {type: String},
+    idade: {type: Number},
+    bairro: {type: String},
+    quantDeDependentes: {type: Number},
+    rendaPerCapita:{type: Number},
+    PessoaComDef:{type: Boolean},
+    idoso: {type: Boolean}
 }, {
     versionKey: false
 })

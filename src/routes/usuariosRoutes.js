@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/alunasController")
+const controller = require("../controller/usuariosController")
 
 router.get("/", controller.get) //busca todos usuarios
 router.get("/acompanhamento/encontrarUsuario", controller.getById) //busca usuario por id e vincula com nis
