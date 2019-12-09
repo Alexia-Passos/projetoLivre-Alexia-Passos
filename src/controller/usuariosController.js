@@ -15,9 +15,9 @@ exports.get = (req, res) => {
   }
   
 exports.getById = (req, res) => {
-    const id = req.params.id
+    const usuariosId = req.params.id
   
-    Usuarios.findById(id, function (err, usuario) {
+    Usuarios.findById(usuariosId, function (err, usuario) {
       if (err) return res.status(500).send(err);
   
       if (!usuario) {

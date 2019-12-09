@@ -2,7 +2,7 @@
   "name": "projetolivre-alexia-passos",
   "version": "1.0.0",
   "description": "Projeto Livre Reprograma",
-  "main": "src/server.js",
+  "main": "src/model/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
