@@ -1,4 +1,4 @@
-const Usuarios = require()
+const Usuarios = require('../model/usuarios')
 
 exports.postUsuario = (req, res) => {
   Usuarios.save(function (err, usuario) {
@@ -90,5 +90,3 @@ exports.removeUsuario = (req, res) => {
 
 }
 
-
-//!!!PENDENTE!!! getReferencia: consome API de localizaçao e vincula bairro com referencia de cras
