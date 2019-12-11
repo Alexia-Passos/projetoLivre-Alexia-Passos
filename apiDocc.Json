@@ -1,0 +1,8 @@
+{
+    "name": "Documentação API - Projeto Livre Alexia",
+    "version": "1.0.0",
+    "description": "API Alexia Passos",
+    "template": {
+        "forceLanguage": "en"
+    }
+}

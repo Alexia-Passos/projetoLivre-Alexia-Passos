@@ -27,6 +27,6 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 app.get("/", index)
-app.get("/usuarios", usuarios)
+app.get("/usuario", usuarios)
 
 module.exports = app
