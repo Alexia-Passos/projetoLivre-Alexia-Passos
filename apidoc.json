@@ -1,0 +1,7 @@
+{
+    "name": "API Projeto Livre",
+    "version": "0.1.0",
+    "description": "apiDoc Projeto Alexia Passos",
+    "title": "Custom apiDoc browser title",
+    "url" : "https://api.github.com/v1"
+  }

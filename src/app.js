@@ -1,8 +1,8 @@
-const express = require("express")
+var express = require("express");
+var bodyParser = require("body-parser");
+var routes = require("./routes/routes.js");
+var app = express();
 const mongoose = require("mongoose")
-const bodyParser = require('body-parser');
-
-const app = express()
 
 
 mongoose.connect("mongodb://localhost:27017/usuarios",  { useNewUrlParser: true });
@@ -11,22 +11,14 @@ mongoose.connect("mongodb://localhost:27017/usuarios",  { useNewUrlParser: true 
 let db = mongoose.connection;
 db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
-  console.log("conexão feita com sucesso.")
-})
-const index = require("./model/index")
-const usuarios = require("./routes/usuariosRoutes")
-
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  )
-  next()
+  console.log("SHAZAAAAAAAN.")
 })
 
 app.use(bodyParser.json());
-app.get("/", index)
-app.get("/usuario", usuarios)
+app.use(bodyParser.urlencoded({ extended: true }));
 
-module.exports = app
+routes(app);
+
+var server = app.listen(3000, function () {
+    console.log("app running on port.", server.address().port);
+});

@@ -8,13 +8,14 @@ const UsuariosSchema = new mongoose.Schema({
     quantDeDependentes: {type: Number},
     rendaPerCapita:{type: Number},
     PessoaComDef:{type: Boolean},
-    idoso: {type: Boolean}
+    idoso: {type: Boolean},
+    acompPaif: {type: Boolean}
 }, {
     versionKey: false
 })
 
 
-const Usuarios = mongoose.model('Usuarios', UsuariosSchema);
+const Usuarios = mongoose.model('usuarios', UsuariosSchema);
 
 module.exports = Usuarios;
 
