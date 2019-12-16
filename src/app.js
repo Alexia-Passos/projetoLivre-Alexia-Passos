@@ -11,7 +11,7 @@ mongoose.connect("mongodb://localhost:27017/usuarios",  { useNewUrlParser: true 
 let db = mongoose.connection;
 db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
-  console.log("SHAZAAAAAAAN.")
+  console.log("Esta rodando app.js")
 })
 
 app.use(bodyParser.json());
